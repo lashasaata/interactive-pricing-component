@@ -8,6 +8,58 @@
     <title>interactive-pricing-component</title>
   </head>
   <body>
+    <header>
+      <h1>
+        Simple, traffic-based pricing<br /><span
+          >Sign-up for our 30-day trial. No credit card required.</span
+        >
+      </h1>
+    </header>
+    <main>
+      <div class="numbersDisplay">
+        <div class="viewBoard">
+          <span id="viewAmount">100K</span>
+          <span>PAGEVIEWS</span>
+        </div>
+        <div class="amountBoard">
+          <span id="costAmount">$16.00</span>
+          <span id="month_year">/ month</span>
+        </div>
+      </div>
+      <div class="interaction">
+        <div id="progress"></div>
+        <input type="range" min="1" max="5" value="3" id="range" />
+      </div>
+
+      <div class="month_year">
+        <span>Monthly Billing</span>
+        <label class="switch">
+          <input type="checkbox" id="checkbox" />
+          <span class="slider"></span>
+        </label>
+        <span>Yearly Billing</span>
+        <span id="discount">25% discount</span>
+      </div>
+      <div class="footer">
+        <div class="benefits">
+          <div>
+            <img src="images/icon-check.svg" alt="check" />
+            <span>Unlimited websites</span>
+          </div>
+
+          <div>
+            <img src="images/icon-check.svg" alt="check" />
+            <span>100% data ownership</span>
+          </div>
+          <div>
+            <img src="images/icon-check.svg" alt="check" />
+            <span>Email reports</span>
+          </div>
+        </div>
+        <button>Start my trial</button>
+      </div>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
